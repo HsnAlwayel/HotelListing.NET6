@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListing APi", "HotelListing APi\HotelListing APi.csproj", "{1D0E5DF2-712B-489D-B2D8-F1CB5EB3275F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D0E5DF2-712B-489D-B2D8-F1CB5EB3275F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D0E5DF2-712B-489D-B2D8-F1CB5EB3275F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D0E5DF2-712B-489D-B2D8-F1CB5EB3275F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D0E5DF2-712B-489D-B2D8-F1CB5EB3275F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E8AC857-FF29-4B3A-A80C-55F023AD899B}
+	EndGlobalSection
+EndGlobal
