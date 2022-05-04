@@ -1,10 +1,16 @@
-﻿namespace HotelListing_APi.Models.Hotel;
+﻿
 
-public class GetHotelDto
+using System.ComponentModel.DataAnnotations;
+
+namespace HotelListing_APi.Models.Hotel;
+
+public class GetHotelDto :BaseHotelDto
 {
     public int Id { get; set; }        //Id is the primary Key
-    public string Name { get; set; }
-    public string Address { get; set; }
-    public double Rating { get; set; }
-    public int CountryId { get; set; }
+
+}
+
+public class GetHotelDetailsDto : BaseHotelDto
+{
+    public int Id { get; set; } 
 }
