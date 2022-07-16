@@ -1,5 +1,5 @@
 ﻿using HotelListing_APi.Contracts;
-using HotelListing_APi.Models;
+using HotelListing_APi.Models.Users;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,6 +35,22 @@ namespace HotelListing_APi.Controllers
                 return BadRequest(ModelState);
             }
             return Ok();
+        }
+
+        [HttpPost]
+        [Route("login")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
+        {
+            var authResponse = await _authManager.Login(loginDto);
+
+            if (authResponse==null)
+            {
+                return Unauthorized();
+            }
+            return Ok(authResponse);
         }
     }
 }
